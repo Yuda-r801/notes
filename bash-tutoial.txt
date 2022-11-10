@@ -9,6 +9,8 @@ ctrl-x-e - continue editing your current shell line in a text editor (uses $EDIT
 alt-. - paste previous command's argument (useful for running multiple commands on the same resource)
 9:18 - reset - resets/unborks your terminal
 
+xdg-open <file.txt>
+
 which $SHELL (probably bash...)
 #! - shebang... 
 #!/bin/bash
@@ -17,6 +19,12 @@ chmod +x hi.sh
 name="Recht" => $name
 read name
 name=$1 - use the first argument passed to the script (myScript.sh yuda).
-user=(whoami)
-date=(date)
-whereami=(pwd) 
+user=$(whoami)
+date=$(date)
+whereami=$(pwd) 
+echo $((8 + 3)) - doing math
+if [[ $USER == "root" ]]; then
+	echo "the user is root"
+else
+	echo "user is not root"
+fi

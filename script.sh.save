@@ -1,0 +1,10 @@
+which $SHELL 
+#!/bin/bash
+sleep 3 
+
+name="Recht" => $name
+read name
+name=$1 - use the first argument passed to the script (myScript.sh yuda).
+user=(whoami)
+date=(date)
+whereami=(pwd) 
